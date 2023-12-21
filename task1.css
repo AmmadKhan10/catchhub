@@ -1,0 +1,290 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(248, 242, 242, 0.644);   
+}
+
+.sec1-parent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 300px;
+}
+.sec1-child1 {
+    width: 50%;
+    text-align: center;
+}
+.img1 {
+    width:30%; 
+    margin: 15px 2px 0px 0px;
+}
+.sec1-child1 p {
+    color: gray;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    font-size: 28px;
+}
+.sec1-child1 h3 {
+    letter-spacing: 3px;
+    font-size: 28px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+.sec1-child11 {
+    display: flex;
+    text-align: center;
+    
+}
+.sec1-child11>img {
+    width: 200px;
+}
+.sec1-child2 {
+    width: 50%;
+}
+
+.sec1-child2>img {
+    width: 100%
+}
+
+        /*------------------------ Section 2 start here ----------------------------*/
+
+.sec2-parent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec2-child1 {
+    width: 50%;
+}
+.sec2-child2 {
+    width: 50%;
+}
+.sec2-child1>img {
+    width: 100%;
+}
+
+.sec2-child2 p {
+    color: gray;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    font-size: 25px;
+    text-align: center;
+}
+.sec2-child2 h1 {
+    letter-spacing: 4px;
+    font-size: 35px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+        /*------------------------ Section 3 start here ----------------------------*/
+.sec3-parent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec3-child1 {
+    width: 50%;
+}
+.sec3-child1 p {
+    color: gray;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    font-size: 25px;
+    text-align: center;
+}
+.sec3-child1 h1 {
+    letter-spacing: 4px;
+    font-size: 35px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+.sec3-child2 {
+    width: 50%;
+}
+.sec3-child2>img {
+    width: 100%;
+}
+
+        /*------------------------ Section 4 start here ----------------------------*/
+
+.sec4-parent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec4-child1 {
+    width: 50%;
+    text-align: center;
+}
+.sec4-child1>img {
+    width: 100%;
+}
+.sec4-child2 {
+    width: 50%;
+}
+.sec4-child2 h1 {
+    letter-spacing: 4px;
+    font-size: 35px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+.sec4-child2 p {
+    color: gray;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    font-size: 25px;
+    text-align: center;
+}
+
+ /*------------------------ Section 4 start here ----------------------------*/
+ footer {
+    text-align: center;
+    justify-content: center;
+ }
+ .ftr-child1 {
+    font-size:20px;
+ }
+ .ftr-child1 h3 {
+    font-weight:300;
+ }
+ .ftr-child2 p {
+    font-size: 21px;
+    margin: 15px 0px;
+ }
+ .ftr-img1 {
+    width: 13%;
+    margin-top: 15px;
+ }
+ .ftr-img3 {
+    width: 10%;
+ }
+
+
+/* ------------------Media Query for Mobile----------------------------- */
+
+@media only screen  and (max-width:575px){
+    .sec1-parent, .sec2-parent, .sec3-parent, .sec4-parent {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .sec1-child1 .logo {
+        width: 45%;
+    }
+    .extra-class img {
+        width: 80%;
+    }
+    .extra-class {
+        text-align: center;
+    }
+    .img1 {
+        width:25%; 
+    }
+    .sec1-child1, .sec2-child1, .sec3-child1, .sec4-child1{
+        width: 100%;
+    }
+    .sec1-child2, .sec2-child2, .sec3-child2, .sec4-child2{
+        width: 100%;
+    }
+    .sec1-child1 h3, .sec1-child1 p {
+        font-size: 15px;
+    }
+    .sec2-child2 h1, .sec3-child1 h1, .sec4-child2 h1 {
+        font-size: 5.6vw;
+    }
+    .sec2-child2 p, .sec3-child1 p, .sec4-child2 p {
+        font-size: 4vw;   
+    }
+    .sec2-child1, .sec4-child1 {
+        order: 2;
+    }
+    .sec2-child2, .sec4-child2 {
+        order: 1;
+    }
+    .ftr-child1 h3 {
+        font-size: 18px;
+    }
+    .ftr-child2 p {
+        font-size: 15px;
+    }
+    .ftr-img1 {
+        width: 22%;
+     }
+}
+
+/* ------------------Media Query for ipad----------------------------- */
+
+@media only screen and (min-width:576px) and (max-width:767px){
+    .sec1-parent, .sec2-parent, .sec3-parent, .sec4-parent {
+        margin-bottom: 30px;
+    }
+    .sec1-child1 .logo {
+        width: 60%;
+    }
+    .img1 {
+        width:35%; 
+    }
+    .sec1-child1 h3, .sec1-child1 p {
+        font-size: 2vw;
+    }
+    .sec2-child2 h1, .sec3-child1 h1, .sec4-child2 h1 {
+        font-size: 4.3vw;
+    }
+    .sec2-child2 p, .sec3-child1 p, .sec4-child2 p {
+        font-size: 2vw;   
+    }
+    .ftr-child1 h3 {
+        font-size: 22px;
+    }
+    .ftr-child2 p {
+        font-size: 18px;
+    }
+    .ftr-img1 {
+        width: 22%;
+     }
+}
+
+/* ------------------Media Query for desktop----------------------------- */
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    .sec1-parent, .sec2-parent, .sec3-parent, .sec4-parent {
+        margin-bottom: 30px;
+    }
+    .sec1-child1 .logo {
+        width: 55%;
+    }
+    .img1 {
+        width:30%; 
+    }
+    .sec1-child1 h3, .sec1-child1 p {
+        font-size: 17px;
+    }
+    .sec2-child2 h1, .sec3-child1 h1, .sec4-child2 h1 {
+        font-size: 25px;
+    }
+    .sec2-child2 p, .sec3-child1 p, .sec4-child2 p {
+        font-size: 18px;   
+    }
+    .ftr-child1 h3 {
+        font-size: 22px;
+    }
+    .ftr-child2 p {
+        font-size: 18px;
+    }
+    .ftr-img1 {
+        width: 22%;
+     }
+}
